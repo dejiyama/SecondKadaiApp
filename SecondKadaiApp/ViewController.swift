@@ -9,7 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    //ラベル
+    @IBOutlet weak var text: UITextField!
+    
+    
+    //イベントを受け取るメソッド
+    @IBAction func catchEvent(sender: UITextField) {
+        text.text = sender.text
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
