@@ -9,7 +9,10 @@
 import UIKit
 
 class ResultViewController: UIViewController {
-
+    
+    //ラベル
+    @IBOutlet weak var testLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

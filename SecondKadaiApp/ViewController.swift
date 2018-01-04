@@ -10,13 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    //ラベル
-    @IBOutlet weak var text: UITextField!
     
-    
-    //イベントを受け取るメソッド
-    @IBAction func catchEvent(sender: UITextField) {
-        text.text = sender.text
+    @IBAction func unwind(_ segue: UIStoryboardSegue) {
     }
     
     override func viewDidLoad() {
