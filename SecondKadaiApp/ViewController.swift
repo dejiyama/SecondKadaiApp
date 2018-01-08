@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         let resultViewController:ResultViewController = segue.destination as! ResultViewController
         
         
-        resultViewController.name = text.text
+        resultViewController.name = text.text!
  
     }
     
