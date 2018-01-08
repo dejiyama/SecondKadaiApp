@@ -18,7 +18,20 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // segueから遷移先のResultViewControllerを取得する
+        let resultViewController:ResultViewController = segue.destination as! ResultViewController
+        
+        
+        resultViewController.name = text.text
+ 
+    }
+    
+    //textfield
+    @IBOutlet weak var text: UITextField!
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

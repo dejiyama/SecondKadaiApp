@@ -13,10 +13,14 @@ class ResultViewController: UIViewController {
     //ラベル
     @IBOutlet weak var testLabel: UILabel!
     
+    var name: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        testLabel.text = "こんにちは \(String(describing: name)) さん"
     }
 
     override func didReceiveMemoryWarning() {
