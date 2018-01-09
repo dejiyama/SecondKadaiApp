@@ -18,30 +18,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="名前を入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxo-Ka-Np2">
-                                <rect key="frame" x="65" y="20" width="246" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0eE-hG-mck">
-                                <rect key="frame" x="139" y="284" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0eE-hG-mck">
+                                <rect key="frame" x="20" y="547" width="335" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bxe-z9-dJ1">
-                                <rect key="frame" x="151" y="471" width="72" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bxe-z9-dJ1">
+                                <rect key="frame" x="20" y="607" width="335" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="Xxa-mD-7vk" kind="show" id="Cj6-bM-wf9"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前を入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxo-Ka-Np2">
+                                <rect key="frame" x="20" y="120" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rxo-Ka-Np2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1JF-jE-Yjy"/>
+                            <constraint firstItem="rxo-Ka-Np2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="ENE-GN-3FO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Bxe-z9-dJ1" secondAttribute="bottom" constant="30" id="FTz-t2-ef9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rxo-Ka-Np2" secondAttribute="trailing" constant="20" id="J9d-7o-KIQ"/>
+                            <constraint firstItem="Bxe-z9-dJ1" firstAttribute="top" secondItem="0eE-hG-mck" secondAttribute="bottom" constant="30" id="Me0-F1-YIt"/>
+                            <constraint firstItem="0eE-hG-mck" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fA0-4n-kdb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0eE-hG-mck" secondAttribute="trailing" constant="20" id="lRy-IX-CLL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bxe-z9-dJ1" secondAttribute="trailing" constant="20" id="osZ-6A-3oD"/>
+                            <constraint firstItem="Bxe-z9-dJ1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="veq-N7-Uul"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -62,14 +70,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zr6-j0-KzD">
-                                <rect key="frame" x="166.5" y="120" width="42" height="20"/>
+                                <rect key="frame" x="20" y="70" width="335" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKv-Uv-IRe">
-                                <rect key="frame" x="150" y="322" width="73" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKv-Uv-IRe">
+                                <rect key="frame" x="40" y="537" width="295" height="30"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
                                     <segue destination="EEm-FY-0mF" kind="unwind" unwindAction="unwind:" id="JM5-iN-YBe"/>
@@ -78,8 +85,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Zr6-j0-KzD" firstAttribute="top" secondItem="Ygd-Ab-f7b" secondAttribute="top" constant="100" id="GH0-GK-wPg"/>
-                            <constraint firstItem="Zr6-j0-KzD" firstAttribute="centerX" secondItem="R09-T0-FlC" secondAttribute="centerX" id="YL9-rK-VDG"/>
+                            <constraint firstItem="Zr6-j0-KzD" firstAttribute="leading" secondItem="Ygd-Ab-f7b" secondAttribute="leading" constant="20" id="8yZ-EA-CIF"/>
+                            <constraint firstItem="Ygd-Ab-f7b" firstAttribute="bottom" secondItem="uKv-Uv-IRe" secondAttribute="bottom" constant="100" id="bWx-O7-CJO"/>
+                            <constraint firstItem="Zr6-j0-KzD" firstAttribute="top" secondItem="Ygd-Ab-f7b" secondAttribute="top" constant="50" id="h3B-ko-Z3Q"/>
+                            <constraint firstItem="Ygd-Ab-f7b" firstAttribute="trailing" secondItem="uKv-Uv-IRe" secondAttribute="trailing" constant="40" id="lW8-ow-6DO"/>
+                            <constraint firstItem="Ygd-Ab-f7b" firstAttribute="trailing" secondItem="Zr6-j0-KzD" secondAttribute="trailing" constant="20" id="oJy-6Y-7Sa"/>
+                            <constraint firstItem="uKv-Uv-IRe" firstAttribute="leading" secondItem="Ygd-Ab-f7b" secondAttribute="leading" constant="40" id="qEg-dZ-Q5L"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ygd-Ab-f7b"/>
                     </view>
